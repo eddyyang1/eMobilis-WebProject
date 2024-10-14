@@ -1,15 +1,171 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>My WebPage</title>
+<!-- page meta data goes here -->
+        <meta charset="UTF-8">
+        <title> Session 2 Web Page</title>
+<!--        external CSS-->
+        <link href="css/style.css" rel="stylesheet">
+<!--        internal CSS-->
+        <style>
+            button{
+                background-color: chartreuse;
+                color: navy;
+                padding:10px ;
+                margin:10px ;
+                border-radius: 5px;
+            }
+            #btnSubme{
+                background-color: blue;
+                color: wheat;
+                padding:10px ;
+                margin:10px ;
+                border-radius: 5px;
+            }
+            .table{
+                width: 100%;
+                margin: 20px;
+                padding: 10px;
+                font-family: Cambria;
+            }
+            td{
+                padding: 12px;
+                text-align: center;
+                border: 1px solid grey;
+            }
+        </style>
     </head>
-    <body>
-        <h1> Allan Auka.</h1>
-        <h2>Allan Auka.</h2>
-        <h3>Allan Auka.</h3>
-        <h4>Allan Auka.</h4>
-        <h5>Allan Auka.</h5>
-        <h6>Allan Auka.</h6>
+<!--    inline CSS-->
+    <body style="background-color: darkslategray; color:white">
+        <p style="font-family:'Century Schoolbook'">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
+<!--    list elements-->
+        <!--        ordered list-->
+        <ol>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Pickle</li>
+            <li>Pineapple</li>
+            <li>Apple</li>
+        </ol>
+<!--        unordered list-->
+    <ul>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Pickle</li>
+            <li>Pineapple</li>
+            <li>Apple</li>
+        </ul>
+<!--    headers-->
+    <h1>Heading 1</h1>
+    <h6>Heading 6</h6>
+<!--    block quotes-->
+    <blockquote>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</blockquote>
+<!--    buttons-->
+    <button>CLICK ME</button>
+    <button id="btnSubme">SUBMIT ME</button>
+<!--    image-->
+    <img src="assets/myimage.jpg" width="200" height="200" alt="Rally car too fast, you missed it. Ha!!">
+<!--    tables-->
+    <table class="table">
+            <thead>
+                <th>Positions</th>
+                <th>Name</th>
+                <th>Quantity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mango</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Orange</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pickle</td>
+                    <td>11</td>
+                </tr>
+            <tr>
+                    <td>4</td>
+                    <td>Pineapple</td>
+                    <td>10</td>
+                </tr>
+            <tr>
+                    <td>5</td>
+                    <td>Apple</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total fruits</td>
+                    <td>55</td>
+
+                </tr>
+            </tfoot>
+        </table>
+        <table >
+            <thead>
+                <th>Positions</th>
+                <th>Name</th>
+                <th>Quantity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mango</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Orange</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pickle</td>
+                    <td>11</td>
+                </tr>
+            <tr>
+                    <td>4</td>
+                    <td>Pineapple</td>
+                    <td>10</td>
+                </tr>
+            <tr>
+                    <td>5</td>
+                    <td>Apple</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total fruits</td>
+                    <td>55</td>
+
+                </tr>
+            </tfoot>
+        </table>
+<!--    forms-->
+    <form method="post">
+        <label>Fruit Name</label>
+        <input type="text" placeholder="Enter fruit name" name="fruit_name">
+        <label>Quantity Produced</label>
+        <input type="number" placeholder="Enter product quantity" name="fruit_quantity">
+        <label>Producer Email</label>
+        <input type="email" placeholder="user@xyz.com" name="prod_email">
+        <label>Fruit Picture</label>
+        <input type="file" name="fruit_pic">
+        <label>Fruit type</label>
+        <select name="fruit_type">
+            <option value="fruit">Fruit</option>
+            <option value="legume">Legume</option>
+        </select>
+        <input type="submit" name="Submit Form">
+        <input type="reset" name="Reset Form">
+
+    </form>
     </body>
-
-
 </html>
